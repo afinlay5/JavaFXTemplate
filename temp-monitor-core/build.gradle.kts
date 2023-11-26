@@ -1,7 +1,7 @@
 plugins {
     java
-    id("org.graalvm.buildtools.native") version "0.9.20"
-    id("com.diffplug.spotless") version "6.19.0"
+    id("org.graalvm.buildtools.native") version "0.9.20" // TODO - for the whole project
+    id("com.diffplug.spotless") version "6.19.0" // TODO - for the whole project
 }
 
 group = "com.temp.monitor"
@@ -14,11 +14,10 @@ configurations {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
+    annotationProcessor("org.projectlombok:lombok")
+    compileOnly("org.projectlombok:lombok")
+
     implementation("com.google.guava:guava:32.0.0-jre")
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.apache.commons:commons-collections4:4.4")
@@ -27,9 +26,6 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-
-    compileOnly("org.projectlombok:lombok")
-    annotationProcessor("org.projectlombok:lombok")
 }
 
 tasks.test {
