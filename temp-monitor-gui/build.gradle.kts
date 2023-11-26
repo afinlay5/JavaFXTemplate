@@ -1,7 +1,9 @@
+// TODO - common plugins for the whole project
 plugins {
     java
-    id("org.graalvm.buildtools.native") version "0.9.20" // TODO - for the whole project
-    id("com.diffplug.spotless") version "6.19.0" // TODO - for the whole project
+    id("io.freefair.lombok") version "8.4"
+    id("org.graalvm.buildtools.native") version "0.9.20"
+    id("com.diffplug.spotless") version "6.19.0"
 }
 
 group = "com.temp.monitor"
