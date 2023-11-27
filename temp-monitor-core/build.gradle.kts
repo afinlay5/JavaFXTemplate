@@ -1,4 +1,3 @@
-// TODO - common plugins for the whole project
 plugins {
     java
     id("io.freefair.lombok") version "8.4"
@@ -8,7 +7,8 @@ plugins {
 
 group = "com.temp.monitor"
 version = "1.0-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_21
+//java.sourceCompatibility = JavaVersion.VERSION_21
+//java.targetCompatibility = JavaVersion.VERSION_21
 
 dependencies {
     implementation("com.google.guava:guava:32.0.0-jre")

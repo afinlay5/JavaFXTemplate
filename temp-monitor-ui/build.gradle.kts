@@ -20,6 +20,7 @@ dependencies {
 }
 
 javafx {
+    version = "21"
     modules("javafx.controls", "javafx.fxml")
 }
 
@@ -27,7 +28,6 @@ application{
     mainModule = "com.temp.monitor.ui"
     mainClass = "com.temp.monitor.ui.TempMonitorLauncher"
 }
-
 
 jlink {
     imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
@@ -37,7 +37,3 @@ jlink {
     }
     group = "distribution"
 }
-
-//jlinkZip {
-//    group = "distribution"
-//}
