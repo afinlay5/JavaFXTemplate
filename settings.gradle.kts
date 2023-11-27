@@ -7,4 +7,4 @@ dependencyResolutionManagement {
 rootProject.name = "TempMonitor"
 
 include("temp-monitor-core")
-include("temp-monitor-gui")
+include("temp-monitor-ui")
