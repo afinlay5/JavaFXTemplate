@@ -10,12 +10,6 @@ group = "com.temp.monitor"
 version = "1.0-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_21
 
-configurations {
-    compileOnly {
-        extendsFrom(configurations.annotationProcessor.get())
-    }
-}
-
 dependencies {
     implementation("com.google.guava:guava:32.0.0-jre")
     implementation("org.apache.commons:commons-lang3:3.12.0")
