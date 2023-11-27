@@ -11,5 +11,5 @@ version = "1.0-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_21
 
 dependencies {
-//    implementation(project(":temp-monitor-core"))
+    implementation(project(":temp-monitor-core"))
 }
